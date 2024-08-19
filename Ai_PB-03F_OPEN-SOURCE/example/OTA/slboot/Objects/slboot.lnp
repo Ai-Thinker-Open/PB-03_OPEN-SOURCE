@@ -1,0 +1,20 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\ota_flash.o"
+".\objects\slb.o"
+".\objects\jump_table.o"
+".\objects\slboot.o"
+"..\..\..\lib\rf.lib"
+"..\..\..\lib\ble_host.lib"
+".\objects\gpio.o"
+".\objects\my_printf.o"
+".\objects\uart.o"
+".\objects\clock.o"
+".\objects\flash.o"
+".\objects\pwrmgr.o"
+".\objects\startup_armcm0.o"
+".\objects\system_armcm0.o"
+--library_type=microlib --scatter ".\scatter_load.sct"
+..\..\..\misc\bb_rom_sym_m0.txt --keep=jump_table_base --keep=global_config --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\slboot.map" -o .\Objects\slboot.axf

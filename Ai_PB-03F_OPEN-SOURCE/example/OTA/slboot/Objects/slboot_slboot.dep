@@ -1,0 +1,369 @@
+Dependencies for Project 'slboot', Target 'slboot': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\Source\main.c)(0x63352D5F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\driver\timer\timer.h)(0x6364B8F0)
+I (..\..\..\misc\jump_function.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_def.h)(0x63352D5F)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_buf.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll_sleep.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL_PwrMgr.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_common.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll.h)(0x62AA9A16)
+I (..\..\..\components\ble\include\hci.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Memory.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Timers.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\l2cap.h)(0x63352D5F)
+I (..\..\..\components\driver\pwrmgr\pwrmgr.h)(0x6364B8F0)
+I (..\..\..\components\ble\controller\rf_phy_driver.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_hw_drv.h)(0x62AA9A16)
+I (..\..\..\components\inc\version.h)(0x6364B8F9)
+I (..\..\..\components\driver\flash\flash.h)(0x63352D5F)
+I (..\..\..\components\profiles\ota\ota_protocol.h)(0x62AA9A17)
+I (Source\slboot.h)(0x62C7893D)
+I (..\..\..\components\inc\global_config.h)(0x63352D5F)
+F (..\..\..\components\profiles\ota\ota_flash.c)(0x63352D5F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\ota_flash.o --omf_browse .\objects\ota_flash.crf --depend .\objects\ota_flash.d)
+I (..\..\..\components\driver\flash\flash.h)(0x63352D5F)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\inc\version.h)(0x6364B8F9)
+I (..\..\..\components\profiles\ota\ota_flash.h)(0x62AA9A17)
+I (..\..\..\components\profiles\ota_app\ota_app_service.h)(0x62BC114C)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\profiles\ota\ota_protocol.h)(0x62AA9A17)
+I (..\..\..\components\libraries\crc16\crc16.h)(0x62AA9A17)
+F (..\..\..\components\profiles\slb\slb.c)(0x63352D5F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\slb.o --omf_browse .\objects\slb.crf --depend .\objects\slb.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\driver\flash\flash.h)(0x63352D5F)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\inc\version.h)(0x6364B8F9)
+I (..\..\..\components\libraries\crc16\crc16.h)(0x62AA9A17)
+I (..\..\..\components\profiles\slb\slb.h)(0x62F4AC27)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\profiles\ota\ota_flash.h)(0x62AA9A17)
+F (..\..\..\misc\jump_table.c)(0x6364B8F0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\jump_table.o --omf_browse .\objects\jump_table.crf --depend .\objects\jump_table.d)
+I (..\..\..\misc\jump_function.h)(0x63352D5F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\ble\controller\ll_def.h)(0x63352D5F)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_buf.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll_sleep.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL_PwrMgr.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_common.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll.h)(0x62AA9A16)
+I (..\..\..\components\driver\timer\timer.h)(0x6364B8F0)
+I (..\..\..\components\ble\include\hci.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Memory.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Timers.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\l2cap.h)(0x63352D5F)
+I (..\..\..\components\inc\global_config.h)(0x63352D5F)
+I (..\..\..\components\osal\include\OSAL_Tasks.h)(0x62BC114C)
+I (..\..\..\components\ble\controller\rf_phy_driver.h)(0x63352D5F)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_hw_drv.h)(0x62AA9A16)
+I (..\..\..\components\inc\version.h)(0x6364B8F9)
+I (..\..\..\components\driver\pwrmgr\pwrmgr.h)(0x6364B8F0)
+F (.\Source\slboot.c)(0x63352D5F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\slboot.o --omf_browse .\objects\slboot.crf --depend .\objects\slboot.d)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Memory.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Timers.h)(0x62AA9A17)
+I (Source\slboot.h)(0x62C7893D)
+I (..\..\..\components\osal\include\OSAL_Tasks.h)(0x62BC114C)
+I (..\..\..\components\profiles\slb\slb.h)(0x62F4AC27)
+I (..\..\..\components\profiles\ota\ota_flash.h)(0x62AA9A17)
+F (..\..\..\lib\rf.lib)(0x63352D6E)()
+F (..\..\..\lib\ble_host.lib)(0x63352D6E)()
+F (..\..\..\components\driver\gpio\gpio.c)(0x6364B8F0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\driver\pwrmgr\pwrmgr.h)(0x6364B8F0)
+I (..\..\..\misc\jump_function.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_def.h)(0x63352D5F)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_buf.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll_sleep.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL_PwrMgr.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_common.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll.h)(0x62AA9A16)
+I (..\..\..\components\driver\timer\timer.h)(0x6364B8F0)
+I (..\..\..\components\ble\include\hci.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Memory.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Timers.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\l2cap.h)(0x63352D5F)
+I (..\..\..\components\inc\global_config.h)(0x63352D5F)
+F (..\..\..\components\driver\log\my_printf.c)(0x63352D5F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\my_printf.o --omf_browse .\objects\my_printf.crf --depend .\objects\my_printf.d)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+F (..\..\..\components\driver\uart\uart.c)(0x63352D5F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\driver\pwrmgr\pwrmgr.h)(0x6364B8F0)
+I (..\..\..\misc\jump_function.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_def.h)(0x63352D5F)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_buf.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll_sleep.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL_PwrMgr.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_common.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll.h)(0x62AA9A16)
+I (..\..\..\components\driver\timer\timer.h)(0x6364B8F0)
+I (..\..\..\components\ble\include\hci.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Memory.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Timers.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\l2cap.h)(0x63352D5F)
+F (..\..\..\components\driver\clock\clock.c)(0x63352D5F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\clock.o --omf_browse .\objects\clock.crf --depend .\objects\clock.d)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\inc\global_config.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\rf_phy_driver.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_hw_drv.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll_def.h)(0x63352D5F)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_buf.h)(0x62AA9A16)
+I (..\..\..\misc\jump_function.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_sleep.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL_PwrMgr.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_common.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll.h)(0x62AA9A16)
+I (..\..\..\components\driver\timer\timer.h)(0x6364B8F0)
+I (..\..\..\components\ble\include\hci.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Memory.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Timers.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\l2cap.h)(0x63352D5F)
+I (..\..\..\components\inc\version.h)(0x6364B8F9)
+F (..\..\..\components\driver\flash\flash.c)(0x6364B8F0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\flash.o --omf_browse .\objects\flash.crf --depend .\objects\flash.d)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\driver\flash\flash.h)(0x63352D5F)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\inc\version.h)(0x6364B8F9)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\driver\pwrmgr\pwrmgr.h)(0x6364B8F0)
+F (..\..\..\components\driver\pwrmgr\pwrmgr.c)(0x6364B8F0)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\pwrmgr.o --omf_browse .\objects\pwrmgr.crf --depend .\objects\pwrmgr.d)
+I (..\..\..\misc\rom_sym_def.h)(0x6364B8F0)
+I (..\..\..\components\inc\types.h)(0x63352D5F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5E8E3CC2)
+I (..\..\..\components\ble\controller\ll_sleep.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL_PwrMgr.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\comdef.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_def.h)(0x63352D5F)
+I (..\..\..\components\ble\include\bcomdef.h)(0x63352D5F)
+I (..\..\..\components\driver\log\log.h)(0x63352D5F)
+I (..\..\..\components\driver\uart\uart.h)(0x63352D5F)
+I (..\..\..\components\driver\gpio\gpio.h)(0x6364B8F0)
+I (..\..\..\components\inc\bus_dev.h)(0x63352D5F)
+I (..\..\..\components\inc\mcu.h)(0x62AA9A17)
+I (..\..\..\components\arch\cm0\core_bumbee_m0.h)(0x63352D5F)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)
+I (..\..\..\components\inc\mcu_phy_bumbee.h)(0x62AA9A17)
+I (..\..\..\components\inc\error.h)(0x62AA9A17)
+I (..\..\..\components\ble\controller\ll_buf.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll_common.h)(0x62AA9A16)
+I (..\..\..\components\ble\controller\ll.h)(0x62AA9A16)
+I (..\..\..\components\driver\timer\timer.h)(0x6364B8F0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\..\..\components\driver\pwrmgr\pwrmgr.h)(0x6364B8F0)
+I (..\..\..\components\driver\clock\clock.h)(0x63352D5F)
+I (..\..\..\misc\jump_function.h)(0x63352D5F)
+I (..\..\..\components\ble\include\hci.h)(0x62AA9A16)
+I (..\..\..\components\osal\include\OSAL.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Memory.h)(0x62AA9A17)
+I (..\..\..\components\osal\include\OSAL_Timers.h)(0x62AA9A17)
+I (..\..\..\components\ble\include\l2cap.h)(0x63352D5F)
+I (..\..\..\components\driver\flash\flash.h)(0x63352D5F)
+I (..\..\..\components\inc\version.h)(0x6364B8F9)
+I (..\..\..\components\ble\controller\rf_phy_driver.h)(0x63352D5F)
+I (..\..\..\components\ble\controller\ll_hw_drv.h)(0x62AA9A16)
+F (RTE\Device\ARMCM0\startup_ARMCM0.s)(0x62C7893D)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 534" --pd "_RTE_ SETA 1" --pd "ARMCM0 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_armcm0.lst --xref -o .\objects\startup_armcm0.o --depend .\objects\startup_armcm0.d)
+F (RTE\Device\ARMCM0\system_ARMCM0.c)(0x62C7893D)(--c99 -c --cpu Cortex-M0 -D__MICROLIB --li -g -O3 --apcs=interwork --split_sections -I ..\..\..\components\inc -I ..\..\..\components\arch\cm0 -I ..\..\..\components\osal\include -I ..\..\..\components\ble\include -I ..\..\..\components\ble\hci -I ..\..\..\components\ble\host -I ..\..\..\components\ble\controller -I ..\..\..\components\profiles\DevInfo -I ..\..\..\components\profiles\GATT -I ..\..\..\components\profiles\SimpleProfile -I ..\..\..\components\profiles\Roles -I ..\..\..\components\profiles\ota -I ..\..\..\components\profiles\ota_app -I ..\..\..\components\libraries\crc16 -I ..\..\..\components\driver\log -I ..\..\..\components\driver\gpio -I ..\..\..\components\driver\pwrmgr -I ..\..\..\components\driver\uart -I ..\..\..\components\driver\clock -I ..\..\..\components\driver\adc -I ..\..\..\components\driver\flash -I ..\..\..\components\driver\kscan -I ..\..\..\components\driver\i2c -I ..\..\..\components\driver\spi -I ..\..\..\components\driver\watchdog -I ..\..\..\components\driver\timer -I ..\..\..\lib -I .\Source -I ..\..\..\misc -I ..\..\..\components\profiles\slb -DADV_NCONN_CFG=0x01   -DADV_CONN_CFG=0x02   -DSCAN_CFG=0x04    -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02   -DPERIPHERAL_CFG=0x04   -DCENTRAL_CFG=0x08   -DHOST_CONFIG=0x4-I.\RTE\_slboot-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include-D__UVISION_VERSION="534" -D_RTE_ -DARMCM0 -D_RTE_ -DCFG_CP -DCFG_QFN32 -DCFG_FLASH="512" -DMTU_SIZE="247" -DENABLE_LOG_ROM_="0" -DOSALMEM_METRICS="0" -DPHY_MCU_TYPE="MCU_BUMBEE_M0" -DCFG_SLEEP_MODE="PWR_MODE_NO_SLEEP" -DCFG_MTU_23="0" -DCFG_OTA_BANK_MODE="OTA_SINGLE_BANK" -DUSE_FCT="0" -DON_SLB_BOOTLOADER="1" -DDEBUG_INFO="0" -DMAX_NUM_LL_CONN="1"-o .\objects\system_armcm0.o --omf_browse .\objects\system_armcm0.crf --depend .\objects\system_armcm0.d)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\ARMCM0.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include\system_ARMCM0.h)(0x60D3E8E2)

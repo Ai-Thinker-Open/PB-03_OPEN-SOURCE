@@ -1,0 +1,74 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 11 22, 34, LIC=RC93N-YPCRN-63NMB-2EKR7-4TU5C-EG3JH
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      UL2CM3.DLL V1.163.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.3.0
+ 
+<h2>Project:</h2>
+C:\PHY+workplace\Git\PHY6222\release_bbb_sdk\example\OTA\slboot\slboot.uvprojx
+Project File Date:  11/08/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'slboot'
+compiling slboot.c...
+compiling slb.c...
+compiling ota_flash.c...
+compiling my_printf.c...
+compiling main.c...
+compiling jump_table.c...
+compiling gpio.c...
+compiling uart.c...
+assembling startup_ARMCM0.s...
+compiling clock.c...
+compiling system_ARMCM0.c...
+compiling flash.c...
+compiling pwrmgr.c...
+linking...
+Program Size: Code=6732 RO-data=1500 RW-data=17624 ZI-data=1908  
+After Build - User command #1: fromelf.exe --bin -o  ./bin  ./Objects/slboot.axf
+After Build - User command #2: fromelf.exe .\Objects\slboot.axf --i32combined --output .\bin\slboot.hex
+".\Objects\slboot.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+   * Component: Startup Version: 1.2.2
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_slboot
+  C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\Jovin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\Device\ARM\ARMCM0\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: ARM::Device:Startup:1.2.2
+      Source file:   Device\ARM\ARMCM0\Source\ARM\startup_ARMCM0.s
+      Include file:  Device\ARM\ARMCM0\Include\ARMCM0.h
+      Source file:   Device\ARM\ARMCM0\Source\system_ARMCM0.c
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

@@ -1,0 +1,878 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\slboot.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\slboot.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Nov 08 14:54:41 2022
+<BR><P>
+<H3>Maximum Stack Usage =        256 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; slboot_main &rArr; slb_boot_load_exch_zone &rArr; slb_apply_exch_zone_to_fw &rArr; ota_flash_erase &rArr; hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[3]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">SVC_Handler</a><BR>
+ <LI><a href="#[5]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[5]">SysTick_Handler</a><BR>
+ <LI><a href="#[10]">AACI_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[10]">AACI_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[10]">AACI_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[17]">CAN_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[15]">CHLCD_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[11]">CLCD_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[1a]">CPU_CLCD_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[12]">ENET_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[16]">FLEXRAY_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[2]">HardFault_Handler</a> from bb_rom_sym_m0.txt(ABSOLUTE) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[19]">I2C_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[18]">LIN_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[a]">MCIA_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[b]">MCIB_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[1]">NMI_Handler</a> from bb_rom_sym_m0.txt(ABSOLUTE) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[4]">PendSV_Handler</a> from bb_rom_sym_m0.txt(ABSOLUTE) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[7]">RTC_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[0]">Reset_Handler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[1c]">SPI_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[3]">SVC_Handler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[5]">SysTick_Handler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[1f]">SystemInit</a> from system_armcm0.o(i.SystemInit) referenced from startup_armcm0.o(.text)
+ <LI><a href="#[8]">TIM0_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[9]">TIM2_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[c]">UART0_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[d]">UART1_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[e]">UART2_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[1b]">UART3_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[f]">UART4_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[13]">USBDC_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[14]">USBHC_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[6]">WDT_IRQHandler</a> from startup_armcm0.o(.text) referenced from startup_armcm0.o(RESET)
+ <LI><a href="#[20]">__main</a> from entry.o(.ARM.Collect$$$$00000000) referenced from startup_armcm0.o(.text)
+ <LI><a href="#[1e]">_hard_fault</a> from jump_table.o(i._hard_fault) referenced from jump_table.o(.emb_text)
+ <LI><a href="#[27]">hal_UART0_IRQHandler</a> from uart.o(i.hal_UART0_IRQHandler) referenced from jump_table.o(jump_table_mem_area)
+ <LI><a href="#[23]">hal_pwrmgr_sleep_process</a> from pwrmgr.o(i.hal_pwrmgr_sleep_process) referenced from jump_table.o(jump_table_mem_area)
+ <LI><a href="#[24]">hal_pwrmgr_wakeup_process</a> from pwrmgr.o(i.hal_pwrmgr_wakeup_process) referenced from jump_table.o(jump_table_mem_area)
+ <LI><a href="#[26]">hard_fault</a> from jump_table.o(.emb_text) referenced from jump_table.o(jump_table_mem_area)
+ <LI><a href="#[21]">hw_spif_cache_config</a> from flash.o(i.hw_spif_cache_config) referenced from flash.o(i.hal_spif_cache_init)
+ <LI><a href="#[1d]">main</a> from main.o(i.main) referenced from entry9a.o(.ARM.Collect$$$$0000000B)
+ <LI><a href="#[22]">osalInitTasks</a> from slboot.o(i.osalInitTasks) referenced from jump_table.o(jump_table_mem_area)
+ <LI><a href="#[25]">rf_phy_ini</a> from rf_phy_driver.o(i.rf_phy_ini) referenced from jump_table.o(jump_table_mem_area)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[77]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_read (via Veneer)
+</UL>
+
+<P><STRONG><a name="[56]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_low_power_io_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[53]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_init (via Veneer)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_gpio_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[76]"></a>strcmp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_boot_load_exch_zone (via Veneer)
+</UL>
+
+<P><STRONG><a name="[2]"></a>HardFault_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[49]"></a>LL_ENC_AES128_Encrypt0</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finidv (via Veneer)
+</UL>
+
+<P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>PendSV_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE), UNUSED)
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[47]"></a>WaitRTCCount</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_spif_wait_nobusy_x (via Veneer)
+</UL>
+
+<P><STRONG><a name="[5c]"></a>disableSleep</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_init (via Veneer)
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_unlock (via Veneer)
+</UL>
+
+<P><STRONG><a name="[32]"></a>drv_disable_irq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;run_application (via Veneer)
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_write_by_dma (via Veneer)
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector (via Veneer)
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_cache_tag_flush (via Veneer)
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_unlock (via Veneer)
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_lock (via Veneer)
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_unlock (via Veneer)
+</UL>
+
+<P><STRONG><a name="[34]"></a>drv_enable_irq</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;run_application (via Veneer)
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_write_by_dma (via Veneer)
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector (via Veneer)
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_cache_tag_flush (via Veneer)
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_unlock (via Veneer)
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_lock (via Veneer)
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_unlock (via Veneer)
+</UL>
+
+<P><STRONG><a name="[68]"></a>drv_irq_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main (via Veneer)
+</UL>
+
+<P><STRONG><a name="[39]"></a>efuse_read</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_efuse_chip_version_check (via Veneer)
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finidv (via Veneer)
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rom_efuse_version_init (via Veneer)
+</UL>
+
+<P><STRONG><a name="[5d]"></a>enableSleep</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_init (via Veneer)
+<LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_unlock (via Veneer)
+</UL>
+
+<P><STRONG><a name="[3b]"></a>rom_uart_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_hard_fault (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6c]"></a>ll_hw_set_crc_fmt</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_bb_cfg (via Veneer)
+</UL>
+
+<P><STRONG><a name="[6f]"></a>ll_hw_tx2rx_timing_config</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_ini (via Veneer)
+</UL>
+
+<P><STRONG><a name="[3c]"></a>log_printf</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_hard_fault (via Veneer)
+</UL>
+
+<P><STRONG><a name="[4a]"></a>osal_memcmp</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finidv (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7c]"></a>phy_sec_decrypt</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_load_parition (via Veneer)
+</UL>
+
+<P><STRONG><a name="[7a]"></a>phy_sec_encrypt</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_check_parition (via Veneer)
+</UL>
+
+<P><STRONG><a name="[3d]"></a>rtc_get_counter</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_hard_fault (via Veneer)
+</UL>
+
+<P><STRONG><a name="[44]"></a>spif_cmd</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_spif_read_status_reg_x (via Veneer)
+</UL>
+
+<P><STRONG><a name="[65]"></a>spif_config</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_spif_cache_config (via Veneer)
+</UL>
+
+<P><STRONG><a name="[4f]"></a>spif_erase_sector</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector (via Veneer)
+</UL>
+
+<P><STRONG><a name="[45]"></a>spif_rddata</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_spif_read_status_reg_x (via Veneer)
+</UL>
+
+<P><STRONG><a name="[67]"></a>spif_read_id</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_spif_cache_config (via Veneer)
+</UL>
+
+<P><STRONG><a name="[51]"></a>spif_write_dma</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, bb_rom_sym_m0.txt(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_write_by_dma (via Veneer)
+</UL>
+
+<P><STRONG><a name="[20]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(.text)
+</UL>
+<P><STRONG><a name="[81]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[2a]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[2e]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[82]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+
+<P><STRONG><a name="[83]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+
+<P><STRONG><a name="[84]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+
+<P><STRONG><a name="[2c]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+<BR><BR>[Calls]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__arm_fini_ (Weak Reference)
+</UL>
+
+<P><STRONG><a name="[85]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+
+<P><STRONG><a name="[86]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+
+<P><STRONG><a name="[26]"></a>hard_fault</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, jump_table.o(.emb_text))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(jump_table_mem_area)
+</UL>
+<P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[3]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[5]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>AACI_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AACI_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AACI_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>CAN_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>CHLCD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>CLCD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>CPU_CLCD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>ENET_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>FLEXRAY_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>I2C_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>LIN_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>MCIA_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>MCIB_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[7]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>SPI_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[8]"></a>TIM0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>TIM2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>UART0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[d]"></a>UART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>UART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>UART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>UART4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>USBDC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>USBHC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[6]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_armcm0.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[87]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[88]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
+
+<P><STRONG><a name="[89]"></a>__decompress0</STRONG> (Thumb, 58 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
+
+<P><STRONG><a name="[1f]"></a>SystemInit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, system_armcm0.o(i.SystemInit))
+<BR>[Address Reference Count : 1]<UL><LI> startup_armcm0.o(.text)
+</UL>
+<P><STRONG><a name="[8a]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[8b]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[8c]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[38]"></a>_efuse_chip_version_check</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, phy_sec_ext.o(i._efuse_chip_version_check))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _efuse_chip_version_check &rArr; finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;efuse_read (via Veneer)
+<LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finidv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rom_sec_boot_init
+</UL>
+
+<P><STRONG><a name="[1e]"></a>_hard_fault</STRONG> (Thumb, 210 bytes, Stack size 8 bytes, jump_table.o(i._hard_fault))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _hard_fault
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_get_counter (via Veneer)
+<LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rom_uart_init (via Veneer)
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_printf (via Veneer)
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_system_soft_reset
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(.emb_text)
+</UL>
+<P><STRONG><a name="[3f]"></a>_rom_efuse_version_init</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, phy_sec_ext.o(i._rom_efuse_version_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = _rom_efuse_version_init &rArr; lib_efuse_load
+</UL>
+<BR>[Calls]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;efuse_read (via Veneer)
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lib_efuse_load
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rom_boot_init
+</UL>
+
+<P><STRONG><a name="[41]"></a>_rom_sec_boot_init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, phy_sec_ext.o(i._rom_sec_boot_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = _rom_sec_boot_init &rArr; _efuse_chip_version_check &rArr; finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_efuse_chip_version_check
+<LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;efuse_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rom_boot_init
+</UL>
+
+<P><STRONG><a name="[48]"></a>clk_init</STRONG> (Thumb, 108 bytes, Stack size 32 bytes, patch.o(i.clk_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = clk_init &rArr; _clk_apply_setting1
+</UL>
+<BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_clk_apply_setting1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[42]"></a>efuse_init</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, phy_sec_ext.o(i.efuse_init))
+<BR><BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rom_sec_boot_init
+</UL>
+
+<P><STRONG><a name="[3a]"></a>finidv</STRONG> (Thumb, 126 bytes, Stack size 56 bytes, phy_sec_ext.o(i.finidv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;efuse_read (via Veneer)
+<LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LL_ENC_AES128_Encrypt0 (via Veneer)
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osal_memcmp (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_crypto_app
+<LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_efuse_chip_version_check
+</UL>
+
+<P><STRONG><a name="[28]"></a>hal_GPIO_IRQHandler</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, gpio.o(i.hal_GPIO_IRQHandler), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hal_GPIO_IRQHandler &rArr; hal_gpioin_event &rArr; hal_gpio_interrupt_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_gpioin_event
+</UL>
+
+<P><STRONG><a name="[27]"></a>hal_UART0_IRQHandler</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, uart.o(i.hal_UART0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = hal_UART0_IRQHandler &rArr; irq_rx_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_tx_empty_handler
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_rx_handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(jump_table_mem_area)
+</UL>
+<P><STRONG><a name="[29]"></a>hal_UART1_IRQHandler</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, uart.o(i.hal_UART1_IRQHandler), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = hal_UART1_IRQHandler &rArr; irq_rx_handler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_tx_empty_handler
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_rx_handler
+</UL>
+
+<P><STRONG><a name="[4d]"></a>hal_cache_tag_flush</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, flash.o(i.hal_cache_tag_flush))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hal_cache_tag_flush
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_enable_irq (via Veneer)
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_disable_irq (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector
+<LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_spif_cache_config
+</UL>
+
+<P><STRONG><a name="[66]"></a>hal_clk_gate_enable</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, clock.o(i.hal_clk_gate_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_spif_cache_config
+</UL>
+
+<P><STRONG><a name="[4e]"></a>hal_flash_erase_sector</STRONG> (Thumb, 172 bytes, Stack size 40 bytes, flash.o(i.hal_flash_erase_sector))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_enable_irq (via Veneer)
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_disable_irq (via Veneer)
+<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_erase_sector (via Veneer)
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_cache_tag_flush
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_spif_wait_nobusy_x
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_unlock
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_erase
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_erase
+</UL>
+
+<P><STRONG><a name="[50]"></a>hal_flash_write_by_dma</STRONG> (Thumb, 178 bytes, Stack size 48 bytes, flash.o(i.hal_flash_write_by_dma))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = hal_flash_write_by_dma &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_enable_irq (via Veneer)
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_disable_irq (via Veneer)
+<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_write_dma (via Veneer)
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_spif_wait_nobusy_x
+<LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_unlock
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_lock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_write
+</UL>
+
+<P><STRONG><a name="[52]"></a>hal_gpio_init</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, gpio.o(i.hal_gpio_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hal_gpio_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4 (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[57]"></a>hal_gpio_pull_set</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, gpio.o(i.hal_gpio_pull_set))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hal_gpio_pull_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rtc_clock_config
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_low_power_io_init
+</UL>
+
+<P><STRONG><a name="[5a]"></a>hal_pwrmgr_LowCurrentLdo_enable</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwrmgr.o(i.hal_pwrmgr_LowCurrentLdo_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_low_power_io_init
+</UL>
+
+<P><STRONG><a name="[58]"></a>hal_pwrmgr_RAM_retention</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, pwrmgr.o(i.hal_pwrmgr_RAM_retention))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_low_power_io_init
+</UL>
+
+<P><STRONG><a name="[59]"></a>hal_pwrmgr_RAM_retention_set</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, pwrmgr.o(i.hal_pwrmgr_RAM_retention_set))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_low_power_io_init
+</UL>
+
+<P><STRONG><a name="[5b]"></a>hal_pwrmgr_init</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, pwrmgr.o(i.hal_pwrmgr_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hal_pwrmgr_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4 (via Veneer)
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableSleep (via Veneer)
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disableSleep (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[64]"></a>hal_pwrmgr_register</STRONG> (Thumb, 56 bytes, Stack size 12 bytes, pwrmgr.o(i.hal_pwrmgr_register))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = hal_pwrmgr_register
+</UL>
+<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spif_cache_init
+</UL>
+
+<P><STRONG><a name="[23]"></a>hal_pwrmgr_sleep_process</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwrmgr.o(i.hal_pwrmgr_sleep_process))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(jump_table_mem_area)
+</UL>
+<P><STRONG><a name="[30]"></a>hal_pwrmgr_unlock</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, pwrmgr.o(i.hal_pwrmgr_unlock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hal_pwrmgr_unlock
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_enable_irq (via Veneer)
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_disable_irq (via Veneer)
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableSleep (via Veneer)
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disableSleep (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_tx_empty_handler
+</UL>
+
+<P><STRONG><a name="[24]"></a>hal_pwrmgr_wakeup_process</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwrmgr.o(i.hal_pwrmgr_wakeup_process))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(jump_table_mem_area)
+</UL>
+<P><STRONG><a name="[5f]"></a>hal_rc32k_clk_tracking_init</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, clock.o(i.hal_rc32k_clk_tracking_init))
+<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rfphy_init
+</UL>
+
+<P><STRONG><a name="[60]"></a>hal_rom_boot_init</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, patch.o(i.hal_rom_boot_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = hal_rom_boot_init &rArr; _rom_sec_boot_init &rArr; _efuse_chip_version_check &rArr; finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rom_sec_boot_init
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rom_efuse_version_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rfphy_init
+</UL>
+
+<P><STRONG><a name="[62]"></a>hal_rtc_clock_config</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, clock.o(i.hal_rtc_clock_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = hal_rtc_clock_config &rArr; hal_gpio_pull_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_gpio_pull_set
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[63]"></a>hal_spif_cache_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, flash.o(i.hal_spif_cache_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hal_spif_cache_init &rArr; hw_spif_cache_config &rArr; hal_cache_tag_flush
+</UL>
+<BR>[Calls]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hw_spif_cache_config
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_register
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[40]"></a>lib_efuse_load</STRONG> (Thumb, 168 bytes, Stack size 12 bytes, lib_efuse3.o(i.lib_efuse_load))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = lib_efuse_load
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_rom_efuse_version_init
+</UL>
+
+<P><STRONG><a name="[33]"></a>ll_patch_restore</STRONG> (Thumb, 88 bytes, Stack size 20 bytes, patch.o(i.ll_patch_restore))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ll_patch_restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_unlock
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_lock
+</UL>
+
+<P><STRONG><a name="[1d]"></a>main</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = main &rArr; slboot_main &rArr; slb_boot_load_exch_zone &rArr; slb_apply_exch_zone_to_fw &rArr; ota_flash_erase &rArr; hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slboot_main
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spif_cache_init
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rtc_clock_config
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_init
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_gpio_init
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_irq_init (via Veneer)
+<LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clk_init
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rfphy_init
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_low_power_io_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
+</UL>
+<P><STRONG><a name="[22]"></a>osalInitTasks</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, slboot.o(i.osalInitTasks))
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(jump_table_mem_area)
+</UL>
+<P><STRONG><a name="[6a]"></a>ota_flash_erase</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, ota_flash.o(i.ota_flash_erase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = ota_flash_erase &rArr; hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_apply_exch_zone_to_fw
+</UL>
+
+<P><STRONG><a name="[6d]"></a>rf_phy_ana_cfg</STRONG> (Thumb, 232 bytes, Stack size 12 bytes, rf_phy_driver.o(i.rf_phy_ana_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = rf_phy_ana_cfg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_ini
+</UL>
+
+<P><STRONG><a name="[6b]"></a>rf_phy_bb_cfg</STRONG> (Thumb, 310 bytes, Stack size 24 bytes, rf_phy_driver.o(i.rf_phy_bb_cfg))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rf_phy_bb_cfg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ll_hw_set_crc_fmt (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_ini
+</UL>
+
+<P><STRONG><a name="[25]"></a>rf_phy_ini</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, rf_phy_driver.o(i.rf_phy_ini))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = rf_phy_ini &rArr; rf_phy_bb_cfg
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ll_hw_tx2rx_timing_config (via Veneer)
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_set_txPower
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_bb_cfg
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_ana_cfg
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> jump_table.o(jump_table_mem_area)
+</UL>
+<P><STRONG><a name="[6e]"></a>rf_phy_set_txPower</STRONG> (Thumb, 108 bytes, Stack size 20 bytes, rf_phy_driver.o(i.rf_phy_set_txPower))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = rf_phy_set_txPower
+</UL>
+<BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rf_phy_ini
+</UL>
+
+<P><STRONG><a name="[75]"></a>slb_boot_load_exch_zone</STRONG> (Thumb, 112 bytes, Stack size 72 bytes, slb.o(i.slb_boot_load_exch_zone))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = slb_boot_load_exch_zone &rArr; slb_apply_exch_zone_to_fw &rArr; ota_flash_erase &rArr; hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp (via Veneer)
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_write
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_read
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_apply_exch_zone_to_fw
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slboot_main
+</UL>
+
+<P><STRONG><a name="[74]"></a>slb_spif_erase</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, slb.o(i.slb_spif_erase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = slb_spif_erase &rArr; hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_apply_exch_zone_to_fw
+</UL>
+
+<P><STRONG><a name="[71]"></a>slb_spif_read</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, slb.o(i.slb_spif_read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = slb_spif_read
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_boot_load_exch_zone
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_apply_exch_zone_to_fw
+</UL>
+
+<P><STRONG><a name="[73]"></a>slb_spif_write</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, slb.o(i.slb_spif_write))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = slb_spif_write &rArr; hal_flash_write_by_dma &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_write_by_dma
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_boot_load_exch_zone
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_apply_exch_zone_to_fw
+</UL>
+
+<P><STRONG><a name="[69]"></a>slboot_main</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, slboot.o(i.slboot_main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = slboot_main &rArr; slb_boot_load_exch_zone &rArr; slb_apply_exch_zone_to_fw &rArr; ota_flash_erase &rArr; hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;run_application
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_boot_load_exch_zone
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[79]"></a>flash_check_parition</STRONG> (Thumb, 28 bytes, Stack size 32 bytes, aes.o(i.flash_check_parition))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = flash_check_parition
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;phy_sec_encrypt (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_load_app
+</UL>
+
+<P><STRONG><a name="[7b]"></a>flash_load_parition</STRONG> (Thumb, 28 bytes, Stack size 32 bytes, aes.o(i.flash_load_parition))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = flash_load_parition
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;phy_sec_decrypt (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_load_app
+</UL>
+
+<P><STRONG><a name="[3e]"></a>hal_system_soft_reset</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, clock.o(i.hal_system_soft_reset))
+<BR><BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_hard_fault
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_load_app
+</UL>
+
+<P><STRONG><a name="[7d]"></a>is_crypto_app</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, aes.o(i.is_crypto_app))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = is_crypto_app &rArr; finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;finidv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_load_app
+</UL>
+
+<P><STRONG><a name="[72]"></a>crc16</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, ota_flash.o(ota_app_loader_area))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = crc16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_apply_exch_zone_to_fw
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_load_app
+</UL>
+
+<P><STRONG><a name="[7f]"></a>ota_flash_read</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, ota_flash.o(ota_app_loader_area))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = ota_flash_read
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_load_app
+</UL>
+
+<P><STRONG><a name="[7e]"></a>ota_flash_load_app</STRONG> (Thumb, 338 bytes, Stack size 56 bytes, ota_flash.o(ota_app_loader_area))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = ota_flash_load_app &rArr; is_crypto_app &rArr; finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;is_crypto_app
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_system_soft_reset
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_load_parition
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_check_parition
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_read
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc16
+</UL>
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;run_application
+</UL>
+
+<P><STRONG><a name="[80]"></a>jump2app</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, slboot.o(ota_app_loader_area))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;run_application
+</UL>
+
+<P><STRONG><a name="[78]"></a>run_application</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, slboot.o(ota_app_loader_area))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = run_application &rArr; ota_flash_load_app &rArr; is_crypto_app &rArr; finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_enable_irq (via Veneer)
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_disable_irq (via Veneer)
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;jump2app
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_load_app
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slboot_main
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[61]"></a>__NVIC_SetPriority</STRONG> (Thumb, 60 bytes, Stack size 0 bytes, main.o(i.__NVIC_SetPriority))
+<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rfphy_init
+</UL>
+
+<P><STRONG><a name="[55]"></a>hal_low_power_io_init</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, main.o(i.hal_low_power_io_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hal_low_power_io_init &rArr; hal_gpio_pull_set
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_RAM_retention_set
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_RAM_retention
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_LowCurrentLdo_enable
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_gpio_pull_set
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4 (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[5e]"></a>hal_rfphy_init</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, main.o(i.hal_rfphy_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = hal_rfphy_init &rArr; hal_rom_boot_init &rArr; _rom_sec_boot_init &rArr; _efuse_chip_version_check &rArr; finidv
+</UL>
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rom_boot_init
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_rc32k_clk_tracking_init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[70]"></a>slb_apply_exch_zone_to_fw</STRONG> (Thumb, 244 bytes, Stack size 56 bytes, slb.o(i.slb_apply_exch_zone_to_fw))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = slb_apply_exch_zone_to_fw &rArr; ota_flash_erase &rArr; hal_flash_erase_sector &rArr; _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_write
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_read
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_spif_erase
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc16
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ota_flash_erase
+</UL>
+<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;slb_boot_load_exch_zone
+</UL>
+
+<P><STRONG><a name="[54]"></a>hal_gpio_interrupt_enable</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, gpio.o(i.hal_gpio_interrupt_enable), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hal_gpio_interrupt_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_gpioin_event
+</UL>
+
+<P><STRONG><a name="[4b]"></a>hal_gpioin_event</STRONG> (Thumb, 130 bytes, Stack size 32 bytes, gpio.o(i.hal_gpioin_event), UNUSED, KEPT)
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = hal_gpioin_event &rArr; hal_gpio_interrupt_enable
+</UL>
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_gpio_interrupt_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_GPIO_IRQHandler
+</UL>
+
+<P><STRONG><a name="[4c]"></a>irq_rx_handler</STRONG> (Thumb, 84 bytes, Stack size 56 bytes, uart.o(_section_sram_code_))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = irq_rx_handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_UART0_IRQHandler
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_UART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[2f]"></a>irq_tx_empty_handler</STRONG> (Thumb, 138 bytes, Stack size 32 bytes, uart.o(_section_sram_code_))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = irq_tx_empty_handler &rArr; hal_pwrmgr_unlock
+</UL>
+<BR>[Calls]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_pwrmgr_unlock
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_UART0_IRQHandler
+<LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_UART1_IRQHandler
+</UL>
+
+<P><STRONG><a name="[31]"></a>spif_lock</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, flash.o(_section_sram_code_))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = spif_lock &rArr; ll_patch_restore
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_enable_irq (via Veneer)
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_disable_irq (via Veneer)
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ll_patch_restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_write_by_dma
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector
+</UL>
+
+<P><STRONG><a name="[35]"></a>spif_unlock</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, flash.o(_section_sram_code_))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = spif_unlock &rArr; ll_patch_restore
+</UL>
+<BR>[Calls]<UL><LI><a href="#[34]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_enable_irq (via Veneer)
+<LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;drv_disable_irq (via Veneer)
+<LI><a href="#[33]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ll_patch_restore
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_write_by_dma
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector
+</UL>
+
+<P><STRONG><a name="[43]"></a>_spif_read_status_reg_x</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, flash.o(i._spif_read_status_reg_x))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_rddata (via Veneer)
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_cmd (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_spif_wait_nobusy_x
+</UL>
+
+<P><STRONG><a name="[46]"></a>_spif_wait_nobusy_x</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, flash.o(i._spif_wait_nobusy_x))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = _spif_wait_nobusy_x &rArr; _spif_read_status_reg_x
+</UL>
+<BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_spif_read_status_reg_x
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WaitRTCCount (via Veneer)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_write_by_dma
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_flash_erase_sector
+</UL>
+
+<P><STRONG><a name="[21]"></a>hw_spif_cache_config</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, flash.o(i.hw_spif_cache_config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = hw_spif_cache_config &rArr; hal_cache_tag_flush
+</UL>
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_read_id (via Veneer)
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spif_config (via Veneer)
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_cache_tag_flush
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_gate_enable
+</UL>
+<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spif_cache_init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> flash.o(i.hal_spif_cache_init)
+</UL>
+<P><STRONG><a name="[37]"></a>NVIC_EnableIRQ</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, patch.o(i.NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_clk_apply_setting1
+</UL>
+
+<P><STRONG><a name="[36]"></a>_clk_apply_setting1</STRONG> (Thumb, 250 bytes, Stack size 48 bytes, patch.o(i._clk_apply_setting1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = _clk_apply_setting1
+</UL>
+<BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clk_init
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3>
+<P><STRONG><a name="[2d]"></a>__arm_fini_</STRONG> (Unknown, 0 bytes, Stack size 0 bytes, UNDEFINED)
+<BR><BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown_fini
+</UL>
+<HR></body></html>

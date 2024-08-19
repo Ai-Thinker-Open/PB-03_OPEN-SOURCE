@@ -1,0 +1,4 @@
+1、使用 py.exe .\bin2hex.py '"data.bin"' 0x11080000 '"data_80000.hex"'指令将待升级的资源bin文件转为hex文件；
+2、使用hpykit工具将hex文件转为hex16文件；
+3、将资源hex16文件贴在固件hex16文件后；
+4、使用py.exe .\otam_fw.py .\simpleBleMulti_phy6222.hex16脚本生成固件＋资源的bin文件

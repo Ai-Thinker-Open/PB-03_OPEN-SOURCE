@@ -1,0 +1,9 @@
+.\objects\data_save.o: Source\data_save.c
+.\objects\data_save.o: Source\data_save.h
+.\objects\data_save.o: ..\..\..\components\osal\include\osal_snv.h
+.\objects\data_save.o: ..\..\..\components\osal\include\comdef.h
+.\objects\data_save.o: ..\..\..\components\inc\types.h
+.\objects\data_save.o: ..\..\..\misc\rom_sym_def.h
+.\objects\data_save.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\data_save.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\data_save.o: ..\..\..\components\libraries\fs\fs.h

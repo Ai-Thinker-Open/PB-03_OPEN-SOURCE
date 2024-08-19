@@ -1,0 +1,12 @@
+.\objects\bleuart_main.o: Source\bleuart_Main.c
+.\objects\bleuart_main.o: ..\..\..\components\osal\include\OSAL.h
+.\objects\bleuart_main.o: ..\..\..\components\osal\include\comdef.h
+.\objects\bleuart_main.o: ..\..\..\components\inc\types.h
+.\objects\bleuart_main.o: ..\..\..\misc\rom_sym_def.h
+.\objects\bleuart_main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bleuart_main.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\bleuart_main.o: ..\..\..\components\osal\include\OSAL_Memory.h
+.\objects\bleuart_main.o: ..\..\..\components\osal\include\OSAL_Timers.h
+.\objects\bleuart_main.o: ..\..\..\components\osal\include\OSAL_Tasks.h
+.\objects\bleuart_main.o: ..\..\..\components\osal\include\OSAL_PwrMgr.h
+.\objects\bleuart_main.o: ..\..\..\components\osal\include\osal_snv.h

@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\adc_demo.o"
+".\objects\adc_main.o"
+".\objects\osal_adc.o"
+".\objects\voice_circ_buff.o"
+".\objects\voice_queue.o"
+".\objects\adc_poilling_demo.o"
+".\objects\adc_compare_demo.o"
+".\objects\voice_demo.o"
+".\objects\clock.o"
+".\objects\gpio.o"
+".\objects\my_printf.o"
+".\objects\uart.o"
+".\objects\pwrmgr.o"
+".\objects\adc.o"
+".\objects\flash.o"
+".\objects\voice.o"
+".\objects\jump_table.o"
+"..\..\..\lib\rf.lib"
+".\objects\startup_armcm0.o"
+".\objects\system_armcm0.o"
+--library_type=microlib --scatter ".\adc.sct"
+..\..\..\misc\bb_rom_sym_m0.txt --keep=jump_table_base --keep=global_config --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\adc.map" -o .\Objects\adc.axf
