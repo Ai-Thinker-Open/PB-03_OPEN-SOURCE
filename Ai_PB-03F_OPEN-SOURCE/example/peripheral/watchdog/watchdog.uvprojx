@@ -339,7 +339,7 @@
               <MiscControls>-DADV_NCONN_CFG=0x01  -DADV_CONN_CFG=0x02  -DSCAN_CFG=0x04   -DINIT_CFG=0x08   -DBROADCASTER_CFG=0x01 -DOBSERVER_CFG=0x02  -DPERIPHERAL_CFG=0x04  -DCENTRAL_CFG=0x08 -DHOST_CONFIG=0xc</MiscControls>
               <Define>CFG_CP HCI_TL_NONE=1 OSALMEM_METRICS=0 PHY_MCU_TYPE=MCU_BUMBEE_M0 MAIN_HAS_NOARGC MAIN_HAS_NORETURN DEBUG_INFO=1 CFG_SLEEP_MODE=PWR_MODE_SLEEP</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\components\inc;.\source;..\..\..\components\driver\clock;..\..\..\components\driver\gpio;..\..\..\components\arch\cm0;..\..\..\components\ble\include;..\..\..\components\ble\controller;..\..\..\components\ble\hci;..\..\..\components\ble\host;..\..\..\components\libraries\secure;..\..\..\components\osal\include;..\..\..\misc;..\..\..\components\driver\uart;..\..\..\components\driver\log;..\..\..\components\driver\adc;..\..\..\components\driver\pwrmgr;..\..\..\components\driver\timer;..\..\..\components\driver\spi;..\..\..\components\libraries\cliface;..\..\..\components\driver\pwm;..\..\..\components\driver\kscan;..\..\..\components\driver\dma;..\..\..\components\driver\flash;..\..\..\components\driver\spiflash;..\..\..\components\driver\watchdog;.\source</IncludePath>
+              <IncludePath>..\..\..\components\inc;.\source;..\..\..\components\driver\clock;..\..\..\components\driver\gpio;..\..\..\components\arch\cm0;..\..\..\components\ble\include;..\..\..\components\ble\controller;..\..\..\components\ble\hci;..\..\..\components\ble\host;..\..\..\components\libraries\secure;..\..\..\components\osal\include;..\..\..\misc;..\..\..\components\driver\uart;..\..\..\components\driver\log;..\..\..\components\driver\adc;..\..\..\components\driver\pwrmgr;..\..\..\components\driver\timer;..\..\..\components\driver\spi;..\..\..\components\libraries\cli;..\..\..\components\driver\pwm;..\..\..\components\driver\kscan;..\..\..\components\driver\dma;..\..\..\components\driver\flash;..\..\..\components\driver\spiflash;..\..\..\components\driver\watchdog;.\source</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -644,7 +644,7 @@
             <File>
               <FileName>cliface.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\components\libraries\cliface\cliface.c</FilePath>
+              <FilePath>..\..\..\components\libraries\cli\cliface.c</FilePath>
             </File>
           </Files>
         </Group>
