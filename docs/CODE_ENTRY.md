@@ -46,3 +46,24 @@ Reset/startup
 | ADC run modes | `Ai-Demo/BASE/bleUart_AT_ADC/Source/adc_*demo.c` |
 
 Do not assume this representative path is the entry for every example. Open the selected `.uvprojx` and follow its included `main.c`, OSAL task table, and application event handler.
+
+## Build-verified GNU example
+
+The clean ARM GNU builds documented in [Validation](VALIDATION.md) use `example/ble_peripheral/simpleBlePeripheral/gcc/Makefile`. That Makefile directly compiles the following entry chain and links it into `output/sbp.elf`:
+
+1. `main()` in `example/ble_peripheral/simpleBlePeripheral/main.c` initializes the platform and calls `app_main()`.
+2. `app_main()` in `source/SimpleBLEPeripheral_Main.c` initializes OSAL and starts its scheduler.
+3. `osalInitTasks()` in `source/OSAL_SimpleBLEPeripheral.c` registers the task table and calls `SimpleBLEPeripheral_Init()`.
+4. OSAL dispatches application events to `SimpleBLEPeripheral_ProcessEvent()` in `source/simpleBLEPeripheral.c`.
+
+```text
+main()
+  -> app_main()
+     -> osal_init_system()
+        -> osalInitTasks()
+           -> SimpleBLEPeripheral_Init()
+     -> osal_start_system()
+        -> SimpleBLEPeripheral_ProcessEvent()
+```
+
+This GNU path has compiler and linked-artifact evidence. It is a generic SDK example, not the Ai-Thinker BLE UART/AT/ADC application described above; the two paths must not be treated as the same firmware composition.
