@@ -2,6 +2,8 @@
 
 # Ai-Thinker PB-03/PB-03F SDK
 
+## Overview
+
 This repository contains the PHY62XX SDK 3.1.3 sources and PB-03/PB-03F examples. It includes 43 Keil µVision projects for BLE roles, Mesh, OTA, peripherals, and Ai-Thinker application demos, plus one ARM GNU Toolchain example.
 
 ## Prerequisites
@@ -12,7 +14,7 @@ This repository contains the PHY62XX SDK 3.1.3 sources and PB-03/PB-03F examples
 
 The repository includes prebuilt vendor libraries. It does not include Keil MDK, toolchain licenses, programmer drivers, or all source required to rebuild those libraries.
 
-## Get started
+## Getting started
 
 ```powershell
 git clone https://github.com/Ai-Thinker-Open/PB-03_OPEN-SOURCE.git
@@ -61,6 +63,14 @@ bash tools/build_gcc_example.sh
 The firmware script does not alter checked-in build artifacts. The latest recorded run linked an ARM ELF successfully with no errors and 59 compiler warnings. These checks do not replace board testing; see [Validation and reproducibility](docs/VALIDATION.md).
 
 GitHub Actions runs the repository-structure and TinyCrypt checks for pull requests and pushes to `master`. The full ARM firmware build remains an explicit local check because the runner image does not guarantee the required cross-toolchain.
+
+## Troubleshooting and contributing
+
+- If Keil reports a missing compiler, select/install the ARM Compiler 5 version recorded by the chosen `.uvprojx`; do not silently migrate a legacy project to ARM Compiler 6.
+- If a project cannot find a source or scatter file, run `python tools/validate_repository.py` and distinguish hard failures from the reported legacy include-only warnings.
+- If the GNU example fails, confirm that `arm-none-eabi-gcc`, Binutils, and Make are available in the same WSL/Linux shell.
+- For a change, identify the exact project and module, run the repository checks, perform a clean firmware build when the toolchain is available, and report the commit, command, warnings/errors, output hashes, and hardware result in the pull request.
+- Do not include credentials, toolchain licenses, or generated build directories in a contribution.
 
 ## Technical documentation
 

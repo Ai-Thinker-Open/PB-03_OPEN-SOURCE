@@ -2,6 +2,8 @@
 
 # 安信可 PB-03/PB-03F SDK
 
+## 项目介绍
+
 本仓库包含 PHY62XX SDK 3.1.3 源码以及 PB-03/PB-03F 示例，包括 43 个 Keil µVision 工程，覆盖 BLE 角色、Mesh、OTA、外设和安信可应用 Demo，另含一个 ARM GNU 工具链示例。
 
 ## 环境要求
@@ -61,6 +63,14 @@ bash tools/build_gcc_example.sh
 固件脚本不会改写仓库中已提交的历史构建产物。最近一次记录的构建成功链接 ARM ELF，错误为 0、编译器警告为 59。这些检查不能代替开发板实测，详情见[验证与复现](docs/VALIDATION.zh.md)。
 
 GitHub Actions 会在拉取请求及推送到 `master` 时运行仓库结构与 TinyCrypt 检查。完整 ARM 固件构建仍作为明确的本地检查，因为公共 Runner 不保证提供所需的交叉工具链。
+
+## 问题排查与贡献
+
+- 如果 Keil 提示缺少编译器，请选择或安装对应 `.uvprojx` 记录的 ARM Compiler 5 版本，不要直接把旧工程静默迁移到 ARM Compiler 6。
+- 如果工程找不到源码或分散加载文件，先运行 `python tools/validate_repository.py`，并区分硬错误与脚本报告的旧版“仅包含目录”警告。
+- 如果 GNU 示例构建失败，请确认同一个 WSL/Linux Shell 中可以使用 `arm-none-eabi-gcc`、Binutils 和 Make。
+- 提交变更时，请明确具体工程和模块；运行仓库检查；工具链可用时执行干净固件构建；并在拉取请求中记录提交、命令、警告/错误、产物哈希和硬件结果。
+- 贡献内容不得包含凭据、工具链许可证或生成的构建目录。
 
 ## 技术文档
 
