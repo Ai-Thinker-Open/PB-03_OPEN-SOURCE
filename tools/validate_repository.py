@@ -83,11 +83,16 @@ def validate_projects() -> tuple[int, list[str], list[str]]:
 
 def validate_entry_points() -> list[str]:
     base = SDK_ROOT / "Ai-Demo/BASE/bleUart_AT_ADC/Source"
+    gcc_base = SDK_ROOT / "example/ble_peripheral/simpleBlePeripheral"
     checks = {
         base / "main.c": r"\bmain\s*\(",
         base / "bleuart_Main.c": r"\bapp_main\s*\(",
         base / "OSAL_bleuart.c": r"\bosalInitTasks\s*\(",
         base / "bleuart.c": r"\bbleuart_ProcessEvent\s*\(",
+        gcc_base / "main.c": r"\bmain\s*\(",
+        gcc_base / "source/SimpleBLEPeripheral_Main.c": r"\bapp_main\s*\(",
+        gcc_base / "source/OSAL_SimpleBLEPeripheral.c": r"\bosalInitTasks\s*\(",
+        gcc_base / "source/simpleBLEPeripheral.c": r"\bSimpleBLEPeripheral_ProcessEvent\s*\(",
     }
     errors: list[str] = []
     for path, pattern in checks.items():
@@ -128,7 +133,8 @@ def main() -> int:
 
     print(f"Keil projects checked: {project_count}")
     print(f"Markdown files checked: {markdown_count}")
-    print("Representative entry chain: main -> app_main -> osalInitTasks -> bleuart_ProcessEvent")
+    print("Ai-Thinker entry chain: main -> app_main -> osalInitTasks -> bleuart_ProcessEvent")
+    print("GNU-built entry chain: main -> app_main -> osalInitTasks -> SimpleBLEPeripheral_ProcessEvent")
     if project_warnings:
         print(f"Stale include search paths reported: {len(project_warnings)}")
         for warning in project_warnings:

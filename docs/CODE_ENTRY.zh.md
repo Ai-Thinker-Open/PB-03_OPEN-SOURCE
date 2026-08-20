@@ -46,3 +46,24 @@
 | ADC 运行模式 | `Ai-Demo/BASE/bleUart_AT_ADC/Source/adc_*demo.c` |
 
 不要把这一代表性路径当成所有示例的入口。应打开所选 `.uvprojx`，再跟踪它实际包含的 `main.c`、OSAL 任务表和应用事件处理函数。
+
+## 已通过构建验证的 GNU 示例
+
+[验证文档](VALIDATION.zh.md)记录的 ARM GNU 干净构建使用 `example/ble_peripheral/simpleBlePeripheral/gcc/Makefile`。该 Makefile 直接编译以下入口链，并将其链接到 `output/sbp.elf`：
+
+1. `example/ble_peripheral/simpleBlePeripheral/main.c` 中的 `main()` 初始化平台并调用 `app_main()`。
+2. `source/SimpleBLEPeripheral_Main.c` 中的 `app_main()` 初始化 OSAL 并启动调度器。
+3. `source/OSAL_SimpleBLEPeripheral.c` 中的 `osalInitTasks()` 注册任务表并调用 `SimpleBLEPeripheral_Init()`。
+4. OSAL 把应用事件分派给 `source/simpleBLEPeripheral.c` 中的 `SimpleBLEPeripheral_ProcessEvent()`。
+
+```text
+main()
+  -> app_main()
+     -> osal_init_system()
+        -> osalInitTasks()
+           -> SimpleBLEPeripheral_Init()
+     -> osal_start_system()
+        -> SimpleBLEPeripheral_ProcessEvent()
+```
+
+这条 GNU 路径具有编译与链接产物证据。它是通用 SDK 示例，不是上文的安信可 BLE UART/AT/ADC 应用；不能把两条路径视为同一套固件组合。
